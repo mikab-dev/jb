@@ -8,7 +8,8 @@ interface IProps {
 const LandingButton: NextPage<{ text: IProps }> = (props) => {
   return (
     <>
-      <div className="w-150 md:text-lg inline-flex text-blue-500 font-extrabold ">
+      <div className="w-150 md:text-lg flex flex-col items-center text-blue-500 font-extrabold ">
+        <p>Jean-Baptiste Gelle</p>
         <h1>Ostéopathe</h1>
       </div>
     </>
