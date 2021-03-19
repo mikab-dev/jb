@@ -8,7 +8,7 @@ interface IProps {
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="h-screen">
       <Header />
       {children}
       <Footer />

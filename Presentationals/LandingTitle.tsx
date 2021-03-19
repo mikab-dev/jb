@@ -10,7 +10,7 @@ const LandingButton: NextPage<IProps> = ({ text }) => {
     <>
       <div className="w-150 flex flex-col items-center text-blue-500 font-extrabold">
         <p></p>
-        <h1 className="text-4xl">Ostéopathe</h1>
+        <h1 className="text-4xl font-main-text">Ostéopathe</h1>
       </div>
     </>
   );

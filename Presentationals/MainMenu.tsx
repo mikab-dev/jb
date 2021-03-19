@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 interface Props {}
@@ -30,40 +31,49 @@ export const Nav = (props: Props) => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="flex items-center  text-white"
+      className="flex items-center  text-white font-main-menu "
     >
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 ml-40 mt-3 cursor-pointer"
+        className="mr-12 ml-40 mt-3 cursor-pointer  hover:underline"
       >
         POUR QUI ?
       </motion.li>
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 mt-3 cursor-pointer"
+        className="mr-12 mt-3 cursor-pointer hover:underline"
       >
         POUR QUOI ?
       </motion.li>
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 mt-3 cursor-pointer"
+        className="mr-12 mt-3 cursor-pointer hover:underline"
       >
-        BORDEAUX
+        TARIFS
       </motion.li>
+      <Link href="/Bordeaux">
+        <motion.li
+          whileHover={hover}
+          variants={item}
+          className="mr-12 mt-3 cursor-pointer hover:underline"
+        >
+          BORDEAUX
+        </motion.li>
+      </Link>
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 mt-3 cursor-pointer"
+        className="mr-12 mt-3 cursor-pointer hover:underline"
       >
         LANGON
       </motion.li>
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 mt-3 cursor-pointer"
+        className="mr-12 mt-3 cursor-pointer hover:underline"
       >
         CONTACTEZ-MOI
       </motion.li>
