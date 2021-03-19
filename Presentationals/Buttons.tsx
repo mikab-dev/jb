@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 interface Props {}
 
-const Buttons = (props: Props) => {
+const Buttons = (props: Props) => { 
   return (
     <div>
       <Link href="/Bordeaux">

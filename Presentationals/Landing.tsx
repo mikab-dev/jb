@@ -14,10 +14,11 @@ const Landing: React.FC = () => {
           transition={{ duration: 0.75 }}
           className="rounded-full h-96 w-96 bg-white flex justify-center items-center flex-col shadow-xl"
         >
-          <LandingTitle text="" />
+          <LandingTitle text="test" />
           <div className="m-10">
             <Buttons />
           </div>
+          
         </motion.div>
       </div>
     </AnimatePresence>

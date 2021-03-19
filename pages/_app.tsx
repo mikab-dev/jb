@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import { motion } from "framer-motion";
 
 import "../styles/globals.css";
+import Layout from "../Presentationals/Layout";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         },
       }}
     >
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </motion.div>
   );
 }

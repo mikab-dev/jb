@@ -5,12 +5,12 @@ interface IProps {
   text: string;
 }
 
-const LandingButton: NextPage<{ text: IProps }> = (props) => {
+const LandingButton: NextPage<IProps> = ({ text }) => {
   return (
     <>
-      <div className="w-150 md:text-lg flex flex-col items-center text-blue-500 font-extrabold ">
-        <p>Jean-Baptiste Gelle</p>
-        <h1>Ostéopathe</h1>
+      <div className="w-150 flex flex-col items-center text-blue-500 font-extrabold">
+        <p></p>
+        <h1 className="text-4xl">Ostéopathe</h1>
       </div>
     </>
   );
