@@ -39,37 +39,37 @@ export const Nav = (props: Props) => {
         variants={item}
         className="mr-12 ml-40 mt-3 cursor-pointer dropdown inline px-4 font-bold text-base uppercase tracking-wide relative"
       >
-        POUR QUI ?
+        <Link href="/pour-qui">POUR QUI ?</Link>
         <div className="dropdown-menu mt-0 absolute hidden h-auto flex">
           <ul className="block w-full bg-blue-deep  shadow p-4 text-xs">
             <li className="py-1">
               <a className="block text-white font-bold text-xs uppercase hover:text-white cursor-pointer">
-                Femme Enceinte
+                <Link href="/pour-qui/femme-enceinte">Femme Enceinte</Link>
               </a>
             </li>
             <li className="py-1">
               <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                Nourrisson
+                <Link href="/pour-qui/enfant-et-nourrisson">Nourrisson</Link>
               </a>
             </li>
             <li className="py-1">
               <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                Enfant
+                <Link href="/pour-qui/enfant-et-nourrisson">Enfant</Link>
               </a>
             </li>
             <li className="py-1">
               <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                Sportif
+                <Link href="/pour-qui/sportif">Sportif</Link>
               </a>
             </li>
             <li className="py-1">
               <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                Adulte
+                <Link href="/pour-qui/adulte-et-senior">Adulte</Link>
               </a>
             </li>
             <li className="py-1">
               <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                Senior
+                <Link href="/pour-qui/adulte-et-senior">Senior</Link>
               </a>
             </li>
           </ul>
@@ -89,7 +89,7 @@ export const Nav = (props: Props) => {
       >
         TARIFS
       </motion.li>
-      <Link href="/Bordeaux">
+      <Link href="/bordeaux">
         <motion.li
           whileHover={hover}
           variants={item}

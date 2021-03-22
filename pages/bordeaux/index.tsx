@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaBus } from "react-icons/fa";
 
 interface Props {}
 
-const Bordeaux = (props: Props) => {
+const index = (props: Props) => {
   return (
     <div className="bg-white ">
       <div className="container mx-auto  flex justify-between text-center ">
@@ -46,4 +46,4 @@ const Bordeaux = (props: Props) => {
   );
 };
 
-export default Bordeaux;
+export default index;
