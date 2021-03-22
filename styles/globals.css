@@ -1,4 +1,15 @@
+@import "./fonts.css";
 /* ./styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
