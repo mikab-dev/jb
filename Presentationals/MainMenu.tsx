@@ -42,36 +42,48 @@ export const Nav = (props: Props) => {
         <Link href="/pour-qui">POUR QUI ?</Link>
         <div className="dropdown-menu mt-0 absolute hidden h-auto flex">
           <ul className="block w-full bg-blue-deep  shadow p-4 text-xs">
-            <li className="py-1">
-              <a className="block text-white font-bold text-xs uppercase hover:text-white cursor-pointer">
-                <Link href="/pour-qui/femme-enceinte">Femme Enceinte</Link>
-              </a>
-            </li>
-            <li className="py-1">
-              <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                <Link href="/pour-qui/enfant-et-nourrisson">Nourrisson</Link>
-              </a>
-            </li>
-            <li className="py-1">
-              <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                <Link href="/pour-qui/enfant-et-nourrisson">Enfant</Link>
-              </a>
-            </li>
-            <li className="py-1">
-              <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                <Link href="/pour-qui/sportif">Sportif</Link>
-              </a>
-            </li>
-            <li className="py-1">
-              <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                <Link href="/pour-qui/adulte-et-senior">Adulte</Link>
-              </a>
-            </li>
-            <li className="py-1">
-              <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
-                <Link href="/pour-qui/adulte-et-senior">Senior</Link>
-              </a>
-            </li>
+            <Link href="/pour-qui/femme-enceinte">
+              <li className="py-1">
+                <a className="block text-white font-bold text-xs uppercase hover:text-white cursor-pointer">
+                  Femme Enceinte
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/enfant-et-nourrisson">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
+                  Nourrisson
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/enfant-et-nourrisson">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
+                  Enfant
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/sportif">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
+                  Sportif
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/adulte-et-senior">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
+                  Adulte
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/adulte-et-senior">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white cursor-pointer">
+                  Senior
+                </a>
+              </li>
+            </Link>
           </ul>
         </div>
       </motion.li>
