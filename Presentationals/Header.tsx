@@ -6,7 +6,7 @@ interface Props {}
 
 export const Header = (props: Props) => {
   return (
-    <div className="bg-blue-500">
+    <div className="bg-blue-deep">
       <div className="container mx-auto">
         <div className="flex justify-between w-746">
           <Image

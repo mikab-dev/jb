@@ -27,6 +27,13 @@ module.exports = {
         "6xl": "4rem",
         "7xl": "5rem",
       },
+      colors: {
+        blue: {
+          deep: "#23408e",
+          medium: "#385399",
+          text: "#cccccc",
+        },
+      },
     },
   },
   variants: {

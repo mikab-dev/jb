@@ -1,12 +1,11 @@
 import Buttons from "./Buttons";
 import LandingTitle from "./LandingTitle";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
 
 const Landing: React.FC = () => {
   return (
     <AnimatePresence>
-      <div className="bg-blue-500 w-full h-screen flex justify-center items-center flex-col">
+      <div className="bg-blue-deep w-full h-screen flex justify-center items-center flex-col">
         <motion.div
           initial={{ opacity: 0 }}
           exit={{ opacity: 0 }}
