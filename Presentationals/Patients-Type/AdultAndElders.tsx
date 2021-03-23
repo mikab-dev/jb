@@ -16,7 +16,7 @@ const AdultAndElders = (props: Props) => {
           <p className="w-1/2 mt-auto mb-auto ">
             Jean-Baptiste Gellé est un ostéopathe à Bordeaux Caudéran prenant
             pour
-            <strong>adulte</strong> et pour <strong>sénior.</strong> Ses
+            <strong> adulte</strong> et pour <strong>sénior.</strong> Ses
             interventions ostéopathiques permettent de soigner ou de soulager :
             <br />
             <br />
