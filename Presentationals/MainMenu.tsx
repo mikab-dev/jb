@@ -83,17 +83,35 @@ export const Nav = (props: Props) => {
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 mt-3 cursor-pointer "
+        className="mr-12 mt-3 cursor-pointer dropdown inline px-4 font-bold text-base uppercase tracking-wide relative"
       >
-        TARIFS
+        <Link href="/pour-qui">Où ?</Link>
+        <div className="dropdown-menu mt-0 absolute hidden h-auto flex w-max">
+          <ul className="block w-full bg-blue-deep  shadow p-4 text-xs">
+            <Link href="/bordeaux">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
+                  Bordeaux
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/enfant-et-nourrisson">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
+                  Langon
+                </a>
+              </li>
+            </Link>
+          </ul>
+        </div>
       </motion.li>
-      <Link href="/bordeaux">
+      <Link href="/tarifs">
         <motion.li
           whileHover={hover}
           variants={item}
           className="mr-12 mt-3 cursor-pointer "
         >
-          BORDEAUX
+          TARIFS
         </motion.li>
       </Link>
       <motion.li
@@ -101,7 +119,12 @@ export const Nav = (props: Props) => {
         variants={item}
         className="mr-12 mt-3 cursor-pointer "
       >
-        LANGON
+        <a
+          target="_blank"
+          href="https://www.doctolib.fr/osteopathe/bordeaux/jean-baptiste-gelle"
+        >
+          PRENDRE RENDEZ-VOUS
+        </a>
       </motion.li>
       <motion.li
         whileHover={hover}
