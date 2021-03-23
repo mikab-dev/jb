@@ -42,6 +42,20 @@ export const Nav = (props: Props) => {
         <Link href="/pour-qui">POUR QUI ?</Link>
         <div className="dropdown-menu mt-0 absolute hidden h-auto flex w-max">
           <ul className="block w-full bg-blue-deep  shadow p-4 text-xs">
+            <Link href="/pour-qui/adulte-et-senior">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
+                  Adulte / Sénior
+                </a>
+              </li>
+            </Link>
+            <Link href="/pour-qui/enfant-et-nourrisson">
+              <li className="py-1">
+                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
+                  Enfant / Nourrisson
+                </a>
+              </li>
+            </Link>
             <Link href="/pour-qui/femme-enceinte">
               <li className="py-1">
                 <a className="block text-white font-bold text-xs uppercase hover:text-white hover:underline cursor-pointer">
@@ -49,38 +63,10 @@ export const Nav = (props: Props) => {
                 </a>
               </li>
             </Link>
-            <Link href="/pour-qui/enfant-et-nourrisson">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Nourrisson
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/enfant-et-nourrisson">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Enfant
-                </a>
-              </li>
-            </Link>
             <Link href="/pour-qui/sportif">
               <li className="py-1">
                 <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
                   Sportif
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/adulte-et-senior">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Adulte
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/adulte-et-senior">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Senior
                 </a>
               </li>
             </Link>
