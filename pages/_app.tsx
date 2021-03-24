@@ -1,36 +1,19 @@
 import type { AppProps } from "next/app";
-import { motion } from "framer-motion";
 
 import "../styles/globals.css";
 import Layout from "../Presentationals/Layout";
+import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps, router }: AppProps) {
+const GhostWrapper = ({ children }: any) => <>{children}</>;
+
+export default function MyApp({ Component, pageProps, router }: any) {
+  const Wrapper = router.route === "/" ? GhostWrapper : Layout;
+
   return (
-    <Layout>
-      <motion.div
-        key={router.route}
-        initial="pageInitial"
-        animate="pageAnimate"
-        exit="pageExit"
-        transition={{ duration: 0.75 }}
-        variants={{
-          pageInitial: {
-            opacity: 0,
-          },
-          pageAnimate: {
-            opacity: 1,
-          },
-          pageExit: {
-            backgroundColor: "white",
-            filter: `invert()`,
-            opacity: 0,
-          },
-        }}
-      >
-        <Component {...pageProps} />
-      </motion.div>
-    </Layout>
+    <AnimatePresence exitBeforeEnter>
+      <Wrapper key={router.route === "/" ? "/" : "other"}>
+        <Component {...pageProps} key={router.route} />
+      </Wrapper>
+    </AnimatePresence>
   );
 }
-
-export default MyApp;

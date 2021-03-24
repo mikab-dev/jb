@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
+import { motion } from "framer-motion";
 
 interface IProps {
   children: React.ReactChildren;
@@ -8,10 +9,29 @@ interface IProps {
 
 export default function Layout({ children }) {
   return (
-    <div className="h-screen">
+    <motion.div
+      className="h-screen"
+      initial="pageInitial"
+      animate="pageAnimate"
+      exit="pageExit"
+      transition={{ duration: 0.75 }}
+      variants={{
+        pageInitial: {
+          opacity: 0,
+        },
+        pageAnimate: {
+          opacity: 1,
+        },
+        pageExit: {
+          backgroundColor: "white",
+          filter: `invert()`,
+          opacity: 0,
+        },
+      }}
+    >
       <Header />
       {children}
       <Footer />
-    </div>
+    </motion.div>
   );
 }
