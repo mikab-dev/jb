@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./Presentationals/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -32,6 +35,9 @@ module.exports = {
           deep: "#23408e",
           medium: "#385399",
           text: "#cccccc",
+        },
+        gray: {
+          behind: "#f5f5f7",
         },
       },
     },
