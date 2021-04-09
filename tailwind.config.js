@@ -36,6 +36,9 @@ module.exports = {
           medium: "#385399",
           text: "#cccccc",
         },
+        green: {
+          pastel: "#346032",
+        },
         gray: {
           behind: "#f5f5f7",
         },
