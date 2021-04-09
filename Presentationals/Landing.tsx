@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Landing: React.FC = () => {
   return (
-    <div className="bg-blue-deep w-full h-screen flex justify-center items-center flex-col">
+    <div className="bg-green-pastel w-full h-screen flex justify-center items-center flex-col">
       <motion.div
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}

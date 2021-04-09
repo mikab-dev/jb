@@ -31,79 +31,29 @@ export const Nav = (props: Props) => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="flex items-center  text-white font-main-menu "
+      className="flex items-center  text-green-pastel font-main-menu text-2xl"
     >
       {" "}
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 ml-40 mt-3 cursor-pointer dropdown inline px-4 font-bold text-base uppercase tracking-wide relative"
+        className="mr-12 ml-40 mt-3 cursor-pointer dropdown inline px-4 font-bold  uppercase tracking-wide relative"
       >
         <Link href="/pour-qui">POUR QUI ?</Link>
-        <div className="dropdown-menu mt-0 absolute hidden h-auto flex w-max">
-          <ul className="block w-full bg-blue-deep  shadow p-4 text-xs">
-            <Link href="/pour-qui/adulte-et-senior">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Adulte / Sénior
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/enfant-et-nourrisson">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Enfant / Nourrisson
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/femme-enceinte">
-              <li className="py-1">
-                <a className="block text-white font-bold text-xs uppercase hover:text-white hover:underline cursor-pointer">
-                  Femme Enceinte
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/sportif">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Sportif
-                </a>
-              </li>
-            </Link>
-          </ul>
-        </div>
       </motion.li>
       <motion.li
         whileHover={hover}
         variants={item}
         className="mr-12 mt-3 cursor-pointer "
       >
-        POUR QUOI ?
+        <Link href="/pour-quoi">POUR QUOI ?</Link>
       </motion.li>
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 mt-3 cursor-pointer dropdown inline px-4 font-bold text-base uppercase tracking-wide relative"
+        className="mr-12 mt-3 cursor-pointer dropdown inline px-4 font-bold  uppercase tracking-wide relative"
       >
-        <Link href="/pour-qui">Où ?</Link>
-        <div className="dropdown-menu mt-0 absolute hidden h-auto flex w-max">
-          <ul className="block w-full bg-blue-deep  shadow p-4 text-xs">
-            <Link href="/bordeaux">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Bordeaux
-                </a>
-              </li>
-            </Link>
-            <Link href="/pour-qui/enfant-et-nourrisson">
-              <li className="py-1">
-                <a className="block text-white font-bold uppercase hover:text-white hover:underline cursor-pointer">
-                  Langon
-                </a>
-              </li>
-            </Link>
-          </ul>
-        </div>
+        <Link href="/localisation">Où ?</Link>
       </motion.li>
       <Link href="/tarifs">
         <motion.li
@@ -111,21 +61,9 @@ export const Nav = (props: Props) => {
           variants={item}
           className="mr-12 mt-3 cursor-pointer "
         >
-          TARIFS
+          <Link href="/realisations">RÉALISATIONS</Link>
         </motion.li>
       </Link>
-      <motion.li
-        whileHover={hover}
-        variants={item}
-        className="mr-12 mt-3 cursor-pointer "
-      >
-        <a
-          target="_blank"
-          href="https://www.doctolib.fr/osteopathe/bordeaux/jean-baptiste-gelle"
-        >
-          PRENDRE RENDEZ-VOUS
-        </a>
-      </motion.li>
       <motion.li
         whileHover={hover}
         variants={item}
