@@ -1,8 +1,5 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { FaBus } from "react-icons/fa";
 
 interface Props {}
 
@@ -16,14 +13,20 @@ const index = (props: Props) => {
           </p>
           <hr></hr>
           <p className="mt-10 ">
-            Nous nous déplaçons jusqu'à <strong>150km</strong> autour de
-            <strong> Bordeaux</strong>
+            Pour tout entretien <strong>Parc et Jardin</strong>,{" "}
+            <strong>taille de haie</strong>, <strong>abbatage</strong> et{" "}
+            <strong>élagage d'arbres dangereux</strong>,{" "}
+            <strong>évacuation des végétaux</strong>,{" "}
+            <strong>peinture exérieure et intérieure</strong>, traitement des
+            toitures, nous nous déplaçons jusqu'à <strong>150 km</strong> autour
+            de
+            <strong> Bordeaux.</strong>
           </p>
         </div>
         <div className="mt-36">
           <Image
             src="/map.png"
-            alt="Ostéopathe Bordeaux"
+            alt="localisation"
             width={1305}
             height={734}
             className="mr-8"

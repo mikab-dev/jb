@@ -37,13 +37,6 @@ export const Nav = (props: Props) => {
       <motion.li
         whileHover={hover}
         variants={item}
-        className="mr-12 ml-40 mt-3 cursor-pointer dropdown inline px-4 font-bold  uppercase tracking-wide relative"
-      >
-        <Link href="/pour-qui">POUR QUI ?</Link>
-      </motion.li>
-      <motion.li
-        whileHover={hover}
-        variants={item}
         className="mr-12 mt-3 cursor-pointer "
       >
         <Link href="/pour-quoi">POUR QUOI ?</Link>
@@ -69,7 +62,7 @@ export const Nav = (props: Props) => {
         variants={item}
         className="mr-12 mt-3 cursor-pointer "
       >
-        CONTACTEZ-MOI
+        <Link href="/contact">CONTACT</Link>
       </motion.li>
     </motion.ul>
   );
